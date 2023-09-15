@@ -11,11 +11,12 @@ public class BasicCalculator {
         scanner.nextLine();
 
         for (int i=0; i<num; i++){
-            float n=0;
+            double n=0;
             try{
-                n = scanner.nextInt();
+                n = Double.parseDouble(scanner.next());
             }catch (Exception e){
                 System.out.println("Invalid number format.");
+                scanner.nextLine();
                 continue;
             }
             String M = scanner.next();
@@ -24,15 +25,17 @@ public class BasicCalculator {
 //            }catch (Exception e){
 //
 //            }
-            float m=0;
+            double m=0;
             if(M.equals("sqrt")){
-                System.out.println("Result: "+sqrt(n));
+                System.out.printf("Result: %.2f\n",sqrt(n));
+                scanner.nextLine();
                 continue;
             }
             try{
-                m=Float.valueOf(M);
+                m=Double.parseDouble(M);
             }catch (Exception e){
                 System.out.println("Invalid number format.");
+                scanner.nextLine();
                 continue;
             }
 
@@ -55,6 +58,8 @@ public class BasicCalculator {
                 System.out.println("Result: "+String.format("%.2f",pow(n,m)));
             } else if (cal.equals("%")) {
                 System.out.println("Result: "+String.format("%.2f",n%m));
+            } else{
+                System.out.println("Invalid operator.");
             }
 
         }
