@@ -26,7 +26,22 @@ public class Student {
 
     }
 
-    // implement your code
+    public String getStudentID() {
+        return studentID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public double getGPA() {
+        return GPA;
+    }
+// implement your code
 
 }
 
