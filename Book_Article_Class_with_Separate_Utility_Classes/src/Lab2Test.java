@@ -1,3 +1,6 @@
+import java.util.List;
+
+
 public class Lab2Test {
 
     public static void main(String[] args) {
@@ -44,6 +47,18 @@ public class Lab2Test {
 
         toJson(article3);
 
+    }
+
+    private static void getAttr(Object object) {
+        System.out.println(ReflectionUtility.getAttributes(object));
+    }
+
+    private static void toJson(Object object) {
+        System.out.println(JSONUtility.toJSON(object));
+    }
+
+    private static void checkEquality(Object object1, Object object2) {
+        System.out.println(ReflectionUtility.getCheckEquality(object1,object2));
     }
 
     // implement your code
