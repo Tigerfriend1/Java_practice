@@ -37,7 +37,7 @@ public class School {
     }
 
     public void removeAllStudent() {
-        this.students.removeAll(students);
+        this.students.clear();
 
     }
     public void removeStudent(String removeID){
