@@ -9,5 +9,5 @@ import java.lang.reflect.Field;
 public @interface Size {
     public int min();
     public int max();
-    String message();
+    String message() default "Size is not valid";
 }

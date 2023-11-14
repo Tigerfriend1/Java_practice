@@ -14,28 +14,35 @@ public class MyValidator {
         // Implement validation logic using Reflection
         Class<?> cl = obj.getClass();
         Field[] fields = cl.getDeclaredFields();
-        for (Field field : fields){
+        for (Field field : fields) {
             field.setAccessible(true);
-            NotNull notNull = field.getAnnotation(NotNull.class);
-            Size size = field.getAnnotation(Size.class);
-            Object value = null;
-            try {
-                value = field.get(obj);
-                if(notNull!=null && value==null) { //어노테이션 달려있지만 null인경우
+            if (field.isAnnotationPresent(NotNull.class)) {
+                NotNull notNull = field.getAnnotation(NotNull.class);
+                Object value = null;
+                try {
+                    value = field.get(obj);
+                } catch (IllegalAccessException e) {
+                    throw new RuntimeException(e);
+                }
+                if (value == null) {
                     violations.add(notNull.message());
                     return violations;
                 }
-                if(size!=null){
-                    String str = (String) value;
-                    int min = size.min();
-                    int max = size.max();
-                    if (min>str.length() || max<str.length()){
-                        violations.add(size.message());
-                    }
+            }
+            if (field.isAnnotationPresent(Size.class)) {
+                Size size = field.getAnnotation(Size.class);
+                Object value = null;
+                try {
+                    value = field.get(obj);
+                } catch (IllegalAccessException e) {
+                    throw new RuntimeException(e);
                 }
-            } catch (IllegalAccessException e) {
-                System.out.println("IllegalAccessException");
-
+                String str = (String) value;
+                int min = size.min();
+                int max = size.max();
+                if (min > str.length() || max < str.length()) {
+                    violations.add(size.message());
+                }
             }
         }
 
