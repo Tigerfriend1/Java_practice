@@ -1,3 +1,8 @@
+package student;
+
+import _core.annotation.NotNull;
+import _core.annotation.Size;
+
 import java.util.Objects;
 
 public class Student {

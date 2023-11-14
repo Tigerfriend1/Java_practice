@@ -1,10 +1,15 @@
+package _core.annotation;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+import java.lang.reflect.Field;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface NotNull {
-    String message() default "This field cannot be null";
+public @interface Size {
+    public int min();
+    public int max();
+    String message() default "_core.annotation.Size is not valid";
 }
