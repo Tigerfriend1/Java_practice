@@ -21,4 +21,14 @@ public class Circle implements MyComparable {
         return x == otherCircle.x && y == otherCircle.y
                 && radius == otherCircle.radius ;
     }
+
+    //Circle{x=0, y=0, radius=10} has the same size as Circle{x=0, y=0, radius=10}
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "x=" + x +
+                ", y=" + y +
+                ", radius=" + radius +
+                '}';
+    }
 }
