@@ -1,3 +1,7 @@
+package com.cafe.order;
+
+import com.cafe.menu.Beverage;
+
 public class OrderItem {
     private Beverage beverage;
     private int quantity;

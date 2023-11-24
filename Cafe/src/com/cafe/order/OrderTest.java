@@ -1,3 +1,10 @@
+package com.cafe.order;
+
+import com.cafe.menu.Blended;
+import com.cafe.menu.Coffee;
+import com.cafe.menu.Teavana;
+import com.cafe.order.*;
+
 public class OrderTest {
     static PickUpFactory pickUpFactory = new PickUpFactory();
     public static void main(String[] args) {

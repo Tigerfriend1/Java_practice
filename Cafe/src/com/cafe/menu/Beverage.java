@@ -1,3 +1,5 @@
+package com.cafe.menu;
+
 public abstract class Beverage {
     enum SIZE {TALL, GRANDE, VENTI}
     String name;
