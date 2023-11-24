@@ -1,6 +1,8 @@
-package main.java.myjdbc.spec;
+package edu.pnu.myjdbc.impl.mysql;
 
-import java.sql.ResultSet;
+
+import edu.pnu.myjdbc.spec.ResultSet;
+import edu.pnu.myjdbc.spec.Statement;
 
 public class MySQLStatement implements Statement {
 
