@@ -1,6 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class FilterCountDistinctTest {
 
@@ -18,12 +17,12 @@ public class FilterCountDistinctTest {
 
         sc.close();
 
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        System.out.println(data.stream().filter(p->10>p).toList());
+        System.out.println(data.stream().filter(p->10>p).count());
+        System.out.println(data.stream().filter(p->10>p).distinct().toList());
+        System.out.println(data.stream().filter(p->10<=p).toList());
+        System.out.println(data.stream().filter(p->10<=p).count());
+        System.out.println(data.stream().filter(p->10<=p).distinct().toList());
 
     }
 
