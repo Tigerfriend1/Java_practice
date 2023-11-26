@@ -13,14 +13,13 @@ public class PlayerSearchPredicateFactory {
         List<Predicate<Player>> predicateList = new ArrayList<>();
         for(SearchCondition searchCondition : searchConditions){
             switch (searchCondition.getField()){
-                case "name"->predicateList.add(player -> player.getName().contains(searchCondition.getCondition()));
-                case "club"->predicateList.add(player -> player.getClub().contains(searchCondition.getCondition()));
-                case "nationality"->predicateList.add(player -> player.getNationality().contains(searchCondition.getCondition()));
-                case "position" -> predicateList.add(player -> player.getPositions().equals(searchCondition.getCondition()));
+                case "name":predicateList.add(player -> player.getName().contains(searchCondition.getCondition())); break;
+                case "club":predicateList.add(player -> player.getClub().contains(searchCondition.getCondition())); break;
+                case "nationality":predicateList.add(player -> player.getNationality().contains(searchCondition.getCondition()));break;
+                case "position" : predicateList.add(player -> player.getPositions().contains(searchCondition.getCondition()));break;
             }
         }
         return predicateList;
 
     }
 }
-//searchConditions.stream().filter(p->p.

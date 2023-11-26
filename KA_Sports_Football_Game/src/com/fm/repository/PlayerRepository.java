@@ -2,7 +2,11 @@ package com.fm.repository;
 
 import com.fm.unit.Player;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -13,6 +17,7 @@ public class PlayerRepository {
     boolean loaded = false;
     private List<Player> players;
 
+
     private PlayerRepository(){}
 
     public static PlayerRepository getInstance() {
@@ -22,11 +27,11 @@ public class PlayerRepository {
     public List<Player> load() {
         if (!isLoaded()) {
             List<Player> players = new ArrayList<>();
-            String resourceFileName = Thread.currentThread().getContextClassLoader().getResource("players_20_short.csv").getFile();
-            try (Scanner scanner = new Scanner(new File(resourceFileName))) {
-                if (scanner.hasNext()) scanner.nextLine();
-                while (scanner.hasNext()) {
-                    String line = scanner.nextLine();
+            Path FILENAME = Paths.get("players_20_short.csv");
+            try (BufferedReader br = Files.newBufferedReader(FILENAME)) {
+                String line;
+                br.readLine(); // 첫 줄은 건너뛰기
+                while ((line = br.readLine()) != null) {
                     Player p = createPlayer(line.split(","));
                     players.add(p);
                 }
@@ -34,9 +39,11 @@ public class PlayerRepository {
                 System.out.println(e);
             }
             this.players = players;
+            this.loaded = true; // 데이터가 로드되었음을 표시합니다.
         }
         return players;
     }
+
 
     public boolean isLoaded() {
         return loaded;
