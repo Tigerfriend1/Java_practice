@@ -13,6 +13,6 @@ public class DNSClient {
         } catch (UnknownHostException e){
             System.out.println(urlString+" : Name or service not known.");
         }
-        return null;
+        return Optional.empty();
     }
 }
