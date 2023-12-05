@@ -47,11 +47,12 @@ public class Order {
     @Override
     public String toString() {
         StringBuilder st = new StringBuilder("주문번호: ");
-        st.append(orderNo).append("- [");
+        st.append(orderNo).append(" - [");
         for(OrderItem item : items){
             st.append(item).append(", ");
         }
-        st.deleteCharAt(st.length()-2); // "," 제거
+        st.delete(st.length()-2,st.length());
+        //st.deleteCharAt(st.length()-2); // "," 제거
         st.append("]\n");
         return st.toString();
     }

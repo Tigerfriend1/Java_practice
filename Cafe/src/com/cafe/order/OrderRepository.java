@@ -6,7 +6,7 @@ import java.util.List;
 
 public class OrderRepository implements Iterator<Order> {
     List<Order> orders = new ArrayList<>();
-    private int index=0;
+    private int pointer =0;
 
     public void add(Order order) {
         orders.add(order);
@@ -14,13 +14,17 @@ public class OrderRepository implements Iterator<Order> {
 
     @Override
     public boolean hasNext() {
-        if (index<orders.size()) return true;
+        if (pointer <orders.size()) return true;
         return false;
     }
 
     @Override
     public Order next() {
-        return orders.get(index++);
+        orders.remove(pointer);
+        if(orders.isEmpty()) {
+            return null;
+        }
+        return orders.get(pointer);
     }
 //    @Override
 //    public void remove(){
@@ -30,11 +34,14 @@ public class OrderRepository implements Iterator<Order> {
     @Override
     public String toString() {
         StringBuilder st = new StringBuilder("\n--- 주문 관리자 화면 ---\n" +
-                "현재 주문수는 총 ").append(Order.getOrderCounter()).append("입니다.\n\n");
+                "현재 주문수는 총 ").append(Order.getOrderCounter()).append(" 입니다.\n\n");
         st.append("< 주문 내역 >\n");
-        for (int i=orders.size()-Order.getOrderCounter(); i< orders.size();i++){
-            st.append(orders.get(i));
+        for(Order order:orders){
+            st.append(order);
         }
+//        for (int i=orders.size()-Order.getOrderCounter(); i< orders.size();i++){
+//            st.append(orders.get(i));
+//        }
         return st.toString();
     }
 }

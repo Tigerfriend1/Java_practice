@@ -16,6 +16,7 @@ public class PickUpFactory {
             System.out.println("--- 배달 관리 화면 ---");
             System.out.println("배달통으로 주문을 전달합니다!");
             System.out.printf("배송주소: %s\n",address);
+
         }
 
 
