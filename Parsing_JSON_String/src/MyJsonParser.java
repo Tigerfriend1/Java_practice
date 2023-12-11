@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class MyJsonParser {
 
@@ -155,25 +152,77 @@ public class MyJsonParser {
 
 
     private static String convertStringToPrettyJson(String jsonString){
+        StringBuilder sb = new StringBuilder();
+        int spaces = 0;
+        boolean isString = false;
+        for(int i=0; i<jsonString.length();i++){
+            char c = jsonString.charAt(i);
 
-
+            if (!isString){
+                switch (c){
+                    case '{','['->{
+                        spaces +=2;
+                        sb.append(c).append('\n').append(" ".repeat(spaces));
+                    }
+                    case '}',']'->{
+                        spaces-=2;
+                        sb.append('\n').append(" ".repeat(spaces)).append(c);
+                    }
+                    case '"'->{
+                        isString=false;
+                        sb.append(c);
+                    }
+                    case ','-> sb.append(c).append('\n').append(" ".repeat(spaces));
+                    case ':'-> sb.append(c).append(' ');
+                    default -> sb.append(c);
+                }
+            }else {
+                if(c=='"'){
+                    isString=true;
+                }
+                sb.append(c);
+            }
+        }
+        return sb.toString();
     }
 
     private static String convertHashMapToJsonString(HashMap<String, Object> map) {
         StringBuilder sb = new StringBuilder("{");
         for (String key : getTreeMap(map).keySet()){
-            sb.append(String.format("\"%s\":%s", key, objectToString(map.get(key))));
+            sb.append(String.format("\"%s\":%s,", key, objectToString(map.get(key))));
         }
         sb.deleteCharAt(sb.length()-1);
-        sb.append("}");
+        sb.append('}');
 
         return sb.toString();
     }
 
     private static Object objectToString(Object o) {
+        if(o instanceof ArrayList){
+            StringBuilder sb = new StringBuilder();
+            sb.append('[');
+            for (Object value: (ArrayList<Object>) o){
+                sb.append(objectToString(value));
+                sb.append(',');
+            }
+            sb.deleteCharAt(sb.length()-1);
+            sb.append(']');
+            return sb.toString();
+        }else if(o instanceof HashMap){
+            return convertHashMapToJsonString((HashMap<String, Object>) o);
+        }else if(o instanceof String){
+            return String.format("\"%s\"",o);
+        }else {
+            return o.toString();
+        }
     }
 
     private static <K,V> Map<K, V> getTreeMap(Map<K,V> hashMap) {
+        Map<K,V> treeMap = new TreeMap<>();
+        for(Map.Entry<K,V> kvEntry : hashMap.entrySet()){
+            treeMap.put(kvEntry.getKey(),kvEntry.getValue());
+        }
+        return treeMap;
     }
 
 
