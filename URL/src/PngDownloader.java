@@ -1,3 +1,4 @@
+import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,7 +13,7 @@ public class PngDownloader {
             String fileName = url.substring(url.lastIndexOf('/') + 1);
             Path outputPath = Files.createTempFile(fileName, ".png");
 
-            try (InputStream in = imageUrl.openStream();
+            try (BufferedInputStream in = new BufferedInputStream(imageUrl.openStream());
                  FileOutputStream out = new FileOutputStream(outputPath.toFile())) {
                 byte[] buffer = new byte[1024];
                 int bytesRead;
