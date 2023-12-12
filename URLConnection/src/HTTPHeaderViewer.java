@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -12,7 +13,8 @@ public class HTTPHeaderViewer {
         try {
             url = new URL(urlString);
             for(int i=0;;i++) {
-                URLConnection connection = url.openConnection();
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setRequestMethod("HEAD");
                 String headerKey = connection.getHeaderFieldKey(i);
                 String headerField = connection.getHeaderField(i);
                 if(headerField==null) break;
