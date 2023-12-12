@@ -1,3 +1,5 @@
+package edu.pnu.cse;
+
 import java.lang.reflect.Proxy;
 
 public class ValidatorTest {

@@ -1,3 +1,5 @@
+package edu.pnu.cse.repository;
+
 import java.util.HashMap;
 
 public class StudentRepositoryImpl implements StudentRepository{

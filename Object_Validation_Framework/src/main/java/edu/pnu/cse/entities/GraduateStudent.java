@@ -1,3 +1,5 @@
+package edu.pnu.cse.entities;
+
 public class GraduateStudent extends Student {
 
     @NotNull(message = "Thesis title cannot be null")

@@ -1,3 +1,5 @@
+package edu.pnu.cse.entities;
+
 public class Student {
 
     private String id;

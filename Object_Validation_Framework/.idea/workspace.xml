@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c8d728c3-31bb-4a26-9fe7-5fe98edd480f" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/ValidationInvocationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/ValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/NotNull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Valid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/entities/GraduateStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/entities/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/repository/StudentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/validation/MyValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/AbstractClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/AbstractClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AreaComputableTest_Interface/src/AreaComputable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AreaComputableTest_Interface/src/AreaComputable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book_Article_Class_with_Separate_Utility_Classes/src/ReflectionUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Book_Article_Class_with_Separate_Utility_Classes/src/ReflectionUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Date_Calculator/src/DateTimeCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Date_Calculator/src/DateTimeCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generic_Method2/src/NumberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Generic_Method2/src/NumberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Learning_Management_System/src/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Learning_Management_System/src/School.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Learning_Management_System/src/SchoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Learning_Management_System/src/SchoolTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/.idea/$PROJECT_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/.idea/qaplug_profiles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/src/main/java/MyJdbcMysqlTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/src/main/java/edu/pnu/myjdbc/impl/mysql/MySQLConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/src/main/java/edu/pnu/myjdbc/impl/mysql/MySQLDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/src/main/java/edu/pnu/myjdbc/impl/mysql/MySQLResultSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/src/main/java/edu/pnu/myjdbc/impl/mysql/MySQLStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/src/main/java/edu/pnu/myjdbc/spec/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/src/main/java/edu/pnu/myjdbc/spec/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/src/main/java/edu/pnu/myjdbc/spec/DriverManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/src/main/java/edu/pnu/myjdbc/spec/ResultSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/src/main/java/edu/pnu/myjdbc/spec/Statement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyJDBC/src/main/resources/META-INF.services/edu.pnu.myjdbc.spec.Driver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyValidator/src/ValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyValidator/src/ValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nested_Class/src/66.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Nested_Class/src/66.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nested_Class/src/MidFielder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Nested_Class/src/MidFielder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nested_Class/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Nested_Class/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraduateStudent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ValidationInvocationHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ValidatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Defender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Defender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Squad.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Squad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Striker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Striker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Static_method/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Static_method/src/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Static_method/src/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Static_method/src/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stream_filter_count_distinct/src/FilterCountDistinctTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Stream_filter_count_distinct/src/FilterCountDistinctTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stream_find/src/FindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Stream_find/src/FindTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2ZR1t1LBnIc2kllpVqQ29AERocp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/tigerfriend/Java_practice/Object_Validation_Framework/src/main/java/edu/pnu/cse",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/edu/pnu/cse" />
+      <recent name="$PROJECT_DIR$/src/main/java/edu/pnu/cse/validation" />
+      <recent name="$PROJECT_DIR$/src/main/java/edu/pnu/cse/repository" />
+      <recent name="$PROJECT_DIR$/src/main/java/edu/pnu/cse/entities" />
+      <recent name="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="c8d728c3-31bb-4a26-9fe7-5fe98edd480f" name="변경" comment="" />
+      <created>1702370288946</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702370288946</updated>
+      <workItem from="1702370290006" duration="133000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
