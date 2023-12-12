@@ -1,5 +1,8 @@
 package edu.pnu.cse.entities;
 
+import edu.pnu.cse.annotations.NotNull;
+import edu.pnu.cse.annotations.Size;
+
 public class GraduateStudent extends Student {
 
     @NotNull(message = "Thesis title cannot be null")
@@ -18,6 +21,10 @@ public class GraduateStudent extends Student {
 
     }
 
+    @Override
+    public String toString() {
+        return String.format("GraduateStudent {%s, thesisTitle='%s'}",super.toString(),thesisTitle);
+    }
     // implement your code
 
 }

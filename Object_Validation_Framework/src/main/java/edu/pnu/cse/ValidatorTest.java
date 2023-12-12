@@ -1,5 +1,10 @@
 package edu.pnu.cse;
 
+import edu.pnu.cse.entities.GraduateStudent;
+import edu.pnu.cse.entities.Student;
+import edu.pnu.cse.repository.StudentRepository;
+import edu.pnu.cse.repository.StudentRepositoryImpl;
+
 import java.lang.reflect.Proxy;
 
 public class ValidatorTest {

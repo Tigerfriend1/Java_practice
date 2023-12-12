@@ -5,17 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d728c3-31bb-4a26-9fe7-5fe98edd480f" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/ValidationInvocationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/ValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Email.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/NotNull.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Valid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/entities/GraduateStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/entities/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/repository/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/repository/StudentRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/validation/MyValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/AbstractClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/AbstractClassTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Circle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract_Class/src/com/bdobe/Rectangle.java" afterDir="false" />
@@ -55,15 +44,18 @@
       <change beforePath="$PROJECT_DIR$/../Nested_Class/src/66.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Nested_Class/src/66.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nested_Class/src/MidFielder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Nested_Class/src/MidFielder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nested_Class/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Nested_Class/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraduateStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StudentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StudentRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ValidationInvocationHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ValidatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/ValidationInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/ValidationInvocationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/ValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/ValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/NotNull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/NotNull.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Size.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Valid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/annotations/Valid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/entities/GraduateStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/entities/GraduateStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/repository/StudentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/repository/StudentRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/validation/MyValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pnu/cse/validation/MyValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Defender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Defender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Squad.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Squad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Striker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PNU_FIFA_Mobile/src/Striker.java" afterDir="false" />
@@ -97,6 +89,11 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "last_opened_file_path": "/Users/tigerfriend/Java_practice/Object_Validation_Framework/src/main/java/edu/pnu/cse",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "AndroidSdkUpdater",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
@@ -119,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702370288946</updated>
-      <workItem from="1702370290006" duration="133000" />
+      <workItem from="1702370290006" duration="2345000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,9 @@
 package edu.pnu.cse.entities;
 
+import edu.pnu.cse.annotations.Email;
+import edu.pnu.cse.annotations.NotNull;
+import edu.pnu.cse.annotations.Size;
+
 public class Student {
 
     private String id;
@@ -30,6 +34,18 @@ public class Student {
 
     }
 
+    public String getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
     // implement your code
 
 }
