@@ -2,18 +2,17 @@ import java.util.*;
 
 public class MyJsonParser {
 
-    public static void main(String[] args) {
+    private JsonEscapeCharacterHandler escapeHandler;
 
+    public MyJsonParser() {
 
-        String json = readJSONStringFromKeyboard();
+        this.escapeHandler = new JsonEscapeCharacterHandler();
 
-        System.out.println(json);
+    }
 
-        var map = parseJSONString(json);
+    public HashMap<String, Object> parse(String jsonString) throws Exception {
 
-        var jsonString = convertHashMapToJsonString(map);
-
-        System.out.println(convertStringToPrettyJson(jsonString));
+        return parseJSONString(escapeHandler.handleEscapedCharacters(jsonString));
 
     }
 
